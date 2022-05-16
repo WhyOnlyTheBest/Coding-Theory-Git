@@ -2,25 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BadGuy : MonoBehaviour
+public class Ramer : BadGuy // Polymorphism
 {
-    private PlayerScript player;
-    [SerializeField] float speed;
+    float speed = 0.5f;
     private CharacterController enemy;
-    [SerializeField] GameObject Bullet;
-    [SerializeField] private float time;
-
+    private PlayerScript player;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerScript>();
         enemy = gameObject.GetComponent<CharacterController>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        time += Time.deltaTime;
     }
 
     void OnTriggerStay(Collider other)
@@ -35,16 +26,12 @@ public class BadGuy : MonoBehaviour
         }
     }
 
-    public void Shoot()
+    // Update is called once per frame
+    void Update()
     {
-            Instantiate(Bullet,transform.position,Bullet.transform.rotation);
-            time = 0;      
-        
-
+        Ram();
     }
 
-    public void Ram()
-    {
-        speed = 3;
-    }
+    
+
 }

@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BadGuy : MonoBehaviour
+public class Shooter : BadGuy // Polymorphism
 {
-    private PlayerScript player;
-    [SerializeField] float speed;
+    float time;
+    float speed = 0.5f;
     private CharacterController enemy;
-    [SerializeField] GameObject Bullet;
-    [SerializeField] private float time;
-
+    private PlayerScript player;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +15,10 @@ public class BadGuy : MonoBehaviour
         enemy = gameObject.GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        time += Time.deltaTime;
-    }
 
     void OnTriggerStay(Collider other)
     {
+        time += Time.deltaTime;
         if (other.gameObject.tag == "Player")
         {
             Vector3 direction = player.transform.position - transform.position;
@@ -34,17 +28,14 @@ public class BadGuy : MonoBehaviour
             enemy.Move(velocity * Time.deltaTime);
         }
     }
-
-    public void Shoot()
+    // Update is called once per frame
+    void Update()
     {
-            Instantiate(Bullet,transform.position,Bullet.transform.rotation);
-            time = 0;      
+        if (time > 3)
+        {
+            Shoot();
+            time = 0;
+        }
         
-
-    }
-
-    public void Ram()
-    {
-        speed = 3;
     }
 }
