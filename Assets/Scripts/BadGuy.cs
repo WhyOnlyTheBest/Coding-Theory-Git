@@ -9,6 +9,8 @@ public class BadGuy : MonoBehaviour
     private CharacterController enemy;
     [SerializeField] GameObject Bullet;
     [SerializeField] private float time;
+    public GameObject m_Projectile;
+    public Transform m_SpawnTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -37,10 +39,8 @@ public class BadGuy : MonoBehaviour
 
     public void Shoot()
     {
-            Instantiate(Bullet,transform.position,Bullet.transform.rotation);
-            time = 0;      
-        
-
+            Instantiate(m_Projectile, m_SpawnTransform.position, m_SpawnTransform.rotation);
+            time = 0;
     }
 
     public void Ram()

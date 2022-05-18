@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 2326679}
   m_Layer: 0
   m_Name: Bad guy
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +158,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
+  m_SpawnTransform: {fileID: 581777073}
 --- !u!143 &2326680
 CharacterController:
   m_ObjectHideFlags: 0
@@ -235,7 +237,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 581777073}
   m_Father: {fileID: 38896425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -773,7 +776,7 @@ GameObject:
   - component: {fileID: 120160617}
   m_Layer: 0
   m_Name: Bad guy (13)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -807,6 +810,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &120160618
 CharacterController:
   m_ObjectHideFlags: 0
@@ -889,7 +894,7 @@ GameObject:
   - component: {fileID: 135147188}
   m_Layer: 0
   m_Name: Bad guy (3)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -923,6 +928,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &135147189
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2140,7 +2147,7 @@ GameObject:
   - component: {fileID: 435257017}
   m_Layer: 0
   m_Name: Bad guy (7)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2174,6 +2181,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &435257018
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2621,6 +2630,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503535703}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &514735638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514735639}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514735639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514735638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1520836621}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519711843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2760,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &581777072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 581777073}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &581777073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581777072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2326683}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586003377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,6 +2980,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590023161}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &596219551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 596219552}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &596219552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596219551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1366524279}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &598209622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,7 +3358,7 @@ GameObject:
   - component: {fileID: 700437286}
   m_Layer: 0
   m_Name: Bad guy (6)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3293,6 +3392,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &700437287
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3468,7 +3569,7 @@ GameObject:
   - component: {fileID: 739230434}
   m_Layer: 0
   m_Name: Bad guy (4)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3502,6 +3603,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &739230435
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3680,7 +3783,7 @@ GameObject:
   - component: {fileID: 840252481}
   m_Layer: 0
   m_Name: Bad guy (5)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3714,6 +3817,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &840252482
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3891,7 +3996,7 @@ GameObject:
   - component: {fileID: 871002890}
   m_Layer: 0
   m_Name: Bad guy (1)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3906,7 +4011,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.1, y: 0, z: 5.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1979033552}
   m_Father: {fileID: 38896425}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3925,6 +4031,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
+  m_SpawnTransform: {fileID: 1979033552}
 --- !u!143 &871002891
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4360,6 +4468,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979983787}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &989019635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989019636}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &989019636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989019635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1163511085}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048978645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4645,6 +4783,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112701848}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1113486054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113486055}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1113486055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113486054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1647559883}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116368958
 GameObject:
   m_ObjectHideFlags: 0
@@ -4847,14 +5015,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163511080}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 342.6, y: 103.05, z: 11.7}
+  m_LocalRotation: {x: -0, y: 0.9522414, z: -0, w: 0.30534613}
+  m_LocalPosition: {x: 345.23, y: 103.05, z: 15.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
+  - {fileID: 989019636}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 144.442, z: 0}
 --- !u!114 &1163511086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4868,6 +5037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.07
+  m_Projectile: {fileID: 1838642930849902429, guid: bb3b15d0b4a07af4aaded2d7ee1ca3d4, type: 3}
+  m_SpawnTransform: {fileID: 989019636}
 --- !u!135 &1163511087
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5371,7 +5542,7 @@ GameObject:
   - component: {fileID: 1366524280}
   m_Layer: 0
   m_Name: Bad guy (2)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5386,7 +5557,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.1, y: 0, z: 12.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 596219552}
   m_Father: {fileID: 38896425}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5405,6 +5577,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
+  m_SpawnTransform: {fileID: 596219552}
 --- !u!143 &1366524281
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5867,7 +6041,7 @@ GameObject:
   - component: {fileID: 1520836622}
   m_Layer: 0
   m_Name: Bad guy (12)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5882,7 +6056,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.7, y: 0, z: -15.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 514735639}
   m_Father: {fileID: 38896425}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5901,6 +6076,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
+  m_SpawnTransform: {fileID: 514735639}
 --- !u!143 &1520836623
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6363,7 +6540,7 @@ GameObject:
   - component: {fileID: 1640176859}
   m_Layer: 0
   m_Name: Bad guy (8)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6397,6 +6574,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &1640176860
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6479,7 +6658,7 @@ GameObject:
   - component: {fileID: 1647559884}
   m_Layer: 0
   m_Name: Bad guy (10)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6494,7 +6673,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.1, y: 0, z: -15.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1113486055}
   m_Father: {fileID: 38896425}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6513,6 +6693,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
+  m_SpawnTransform: {fileID: 1113486055}
 --- !u!143 &1647559885
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6690,7 +6872,7 @@ GameObject:
   - component: {fileID: 1706101320}
   m_Layer: 0
   m_Name: Bad guy (9)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6724,6 +6906,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 0}
+  m_SpawnTransform: {fileID: 0}
 --- !u!143 &1706101321
 CharacterController:
   m_ObjectHideFlags: 0
@@ -7456,6 +7640,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820452208}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1827894240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1827894241}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1827894241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827894240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2034861227}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1857928598
 GameObject:
   m_ObjectHideFlags: 0
@@ -7752,6 +7966,7 @@ GameObject:
   - component: {fileID: 1950992530}
   - component: {fileID: 1950992532}
   - component: {fileID: 1950992531}
+  - component: {fileID: 1950992533}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -7820,6 +8035,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950992529}
   m_CullTransparentMesh: 1
+--- !u!114 &1950992533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950992529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20dfad9b52dc32d4e8fd03e4a1ca0bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1979033551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979033552}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979033552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979033551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 871002889}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2001291685
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,7 +8282,7 @@ GameObject:
   - component: {fileID: 2034861228}
   m_Layer: 0
   m_Name: Bad guy (11)
-  m_TagString: Untagged
+  m_TagString: BadGuy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8040,7 +8297,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.5, y: 0, z: -15.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1827894241}
   m_Father: {fileID: 38896425}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8059,6 +8317,8 @@ MonoBehaviour:
   speed: 0
   Bullet: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
   time: 0
+  m_Projectile: {fileID: 864893701168976019, guid: 2bea8e9145e735b4090f6f368b9b9a18, type: 3}
+  m_SpawnTransform: {fileID: 1827894241}
 --- !u!143 &2034861229
 CharacterController:
   m_ObjectHideFlags: 0

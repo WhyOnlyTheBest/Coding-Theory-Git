@@ -24,6 +24,10 @@ public class Ramer : BadGuy // Polymorphism
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(velocity), speed * Time.deltaTime);
             enemy.Move(velocity * Time.deltaTime);
         }
+        if (other.tag == "GoodGuy")
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

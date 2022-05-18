@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot : MonoBehaviour
+public class GoodShoot : MonoBehaviour
 {
-    private float m_Speed = 350f;   // this is the projectile's speed
+    private float m_Speed = 1000f;   // this is the projectile's speed
     private float m_Lifespan = 3f; // this is the projectile's lifespan (in seconds)
 
     /// <summary>
